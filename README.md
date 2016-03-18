@@ -21,17 +21,17 @@ the output is purely textual - no day-by-day or week-by-week (etc) listings.
 The program does the following:
 - Read an optional command-line parameter. This represents a calendar file, and
 is loaded and displayed to the user. See
-[Calendar Files](## Calendar Files) for file format.
+[Calendar Files](#calendar-files) for file format.
 - The events in the file must be stored in a linked list. If no parameter is
 specified, the list will be initially empty.
 - Display the calendar in the text area of the GUI, in a different format to
 that in the calendar file, and in date order. The format is described in
-[Calendar Display](## Calendar Display).
+[Calendar Display](#calendar-display).
 - Through the use of GUI buttons, allow the user to:
   * *Load a calendar from file* - An existing calendar to replace the one
   currently loaded
   * *Save the current calendar to file* - In the format described
-  [here](## Calendar Files).
+  [here](#calendar-files).
   * *Add a calendar event*
   * *Edit a calendar event*
   * *Delete a calendar event*
