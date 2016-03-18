@@ -5,13 +5,15 @@ is reproduced in this README. There was an initial requirement to use `C-89`,
 however it seems that due to a recent update, the **GTK 2.0** library no longer
 complies with the standard.
 
----
+------
+
 ## To-Do
 1. Check build and package requirements on clean Ubuntu.
 2. Add license file
 3. ...
 
----
+------
+
 ## Program Outline
 The program works with one calendar at a time, where the calendar consists of a
 set of events. Each event has a date, a start time, a title and an *optional*
@@ -40,7 +42,8 @@ that in the calendar file, and in date order. The format is described in
 ensure contains a valid date, time and duration, and that it conforms to the
 file format.
 
----
+------
+
 ## Calendar Files
 Calendar files can contain several events. The file does not state the number
 of events - this can only be known by reading the file to the end (hence the
@@ -72,7 +75,8 @@ Uni
 Earth
 ```
 
----
+------
+
 ## Calendar Display
 The application must update the displayed events whenever a calendar is loaded
 or modified. It would be optimal if events are displayed in sorted order with
@@ -110,7 +114,8 @@ including the name of the month (as opposed to the number).
 appropriate. If the minutes field is zero, omit them.
 - The event display ends with a new line and "---".
 
----
+------
+
 ## Graphical User Interface
 A wrapper around the GTK library was supplied as part of the original
 assignment. Note that this is not my work. This wrapper is found in the
@@ -122,7 +127,8 @@ perform the required functionality (eg. edit an event).
 
 For usage details see [gui.h](./gui.h).
 
----
+------
+
 ## Compiling
 This application requires the **GTK 2.0** package. On recent Ubuntu releases
 this is installed from the `libgtk2.0-dev` package. It also makes use of

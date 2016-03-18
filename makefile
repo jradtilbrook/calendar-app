@@ -3,6 +3,8 @@
 # DATE:		18 Mar 2016
 # The makefile for the calendar application
 
+#TODO figure out how to add separate debug compilation rule and add test harness compilation
+
 CC			= gcc
 GTKFLAGS 	= `pkg-config --cflags gtk+-2.0`
 GTKLIBS 	= `pkg-config --libs gtk+-2.0`
