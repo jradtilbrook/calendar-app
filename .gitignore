@@ -1,0 +1,11 @@
+# All object files
+*.o
+
+# Auto-generated dependency files
+*.d
+
+# No status about vim .swp files
+*.swp
+
+# The application binary
+calendar-app
