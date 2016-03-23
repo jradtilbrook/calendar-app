@@ -1,16 +1,29 @@
 # Calendar Application
-A simple calendar application GUI written in `C`. This was originally an
-assignment from a unit I took as part of my degree. The original assignment spec
-is reproduced in this README. There was an initial requirement to use `C-89`,
-however it seems that due to a recent update, the **GTK 2.0** library no longer
-complies with the standard.
+A simple calendar application GUI written in `C` using the **GTK+ 2** library.
+This was originally an assignment from a unit I took as part of my B.Eng. degree
+and this repository is effectively a re-mastering of that work to improve on and
+add functionality, to squash bugs and to serve as one of many (more to come)
+projects in my portfolio that I exhibit on GitHub. The original assignment
+specification is paraphrased in this README.
+
+There was an initial requirement to conform to `C89`,
+however, since the initial assignment was released (mid 2013), the GTK+ 2
+library no longer seems to comply with the C89 standard (or perhaps the
+non-compliance lies in the `glib` dependency). As a result the original
+compliance is not strictly adhered to and is used as a guide only. GTK+ 2 is
+also scheduled for deprecation soon, so there is an argument to convert the code
+to **GTK+ 3**. This will be considered, along with adding extra wrapper
+functions to the code to improve functionality.
 
 ------
 
 ## To-Do
-1. Check build and package requirements on clean Ubuntu.
-2. Add license file
-3. ...
+- [ ] Check build and package requirements on clean Ubuntu.
+- [ ] Add license file (check with gtk licencing)
+- [ ] Convert makefile to use a *build* directory
+- [ ] Update makefile to handle linkedlist library in separate directory
+- [ ] Find where memory leaks are occurring (within gtk) and fix them
+- [ ] ...
 
 ------
 
