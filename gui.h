@@ -14,6 +14,7 @@
 #ifndef GUI_H
 #define GUI_H
 
+
 /* A struct representing a GUI Window. You don't need to access its fields, but
  * simply pass pointer to it to the functions declared below. */
 typedef struct {
@@ -22,6 +23,7 @@ typedef struct {
     void *textBuffer;
 } Window;
 
+char * file(Window *window);
 /**
  * An array of InputProperties structs -- one array element for each input 
  * space -- must be passed to the dialogBox function. The fields are as 

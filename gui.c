@@ -335,3 +335,19 @@ void messageBox(Window *window, char *message)
     gtk_dialog_run(GTK_DIALOG(dialog));
     gtk_widget_destroy(dialog);        
 }
+
+char * file(Window *window)
+{
+    GtkWidget *dialog;
+    dialog = gtk_file_chooser_dialog_new("Open file",NULL,
+        GTK_FILE_CHOOSER_ACTION_OPEN,
+        GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+                              GTK_STOCK_OPEN, GTK_RESPONSE_ACCEPT,
+                                                  NULL);
+    if (gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_ACCEPT)
+    {
+char *str = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (dialog));
+        gtk_widget_destroy(dialog);
+        return str;
+    }
+}

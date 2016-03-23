@@ -12,15 +12,22 @@ CFLAGS 		= -Wall -pedantic -ansi
 DEBUG		= -g
 BIN 		= calendar-app
 SOURCE 		= $(wildcard *.c)
+SOURCE      += $(wildcard linkedlist/*.c)
 OBJECTS 	= $(SOURCE:%.c=%.o)
+
+
+CFLAGS += $(DEBUG)
 
 # Link the objects
 $(BIN): $(OBJECTS)
 	$(CC) -o $(BIN) $(OBJECTS) $(GTKLIBS)
 
+build:
+	@mkdir build
+
 # Compile the source
-%.o: %.c
-	$(CC) $(CFLAGS) $(GTKFLAGS) -c $<
+%.o: %.c build
+	$(CC) $(CFLAGS) $(GTKFLAGS) -c -o $*.o $<
 	$(CC) $(CFLAGS) -MM -o $*.d $<
 
 # Cleaning rules
