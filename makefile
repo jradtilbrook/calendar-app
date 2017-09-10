@@ -6,9 +6,9 @@
 #TODO figure out how to add separate debug compilation rule and add test harness compilation
 
 CC			= gcc
-GTKFLAGS 	= `pkg-config --cflags gtk+-2.0`
-GTKLIBS 	= `pkg-config --libs gtk+-2.0`
-CFLAGS 		= -Wall -pedantic -ansi
+GTKFLAGS 	= `pkg-config --cflags gtk+-3.0`
+GTKLIBS 	= `pkg-config --libs gtk+-3.0`
+CFLAGS 		= -Wall -pedantic #-ansi
 DEBUG		= -g
 BIN 		= calendar-app
 SOURCE 		= $(wildcard *.c)
