@@ -6,7 +6,6 @@ GitHub. The original assignment specification is paraphrased in this README.
 Note: The original spec required the use of GTK+ 2 and conformity to C89 however these have been relaxed since it is no
 longer an assessed piece of work.
 
-------
 
 ## To-Do
 - [ ] Check and document build/package requirements
@@ -15,12 +14,11 @@ longer an assessed piece of work.
 - [ ] Find where memory leaks are occurring (within gtk) and fix them
 - [ ] ...
 
-------
 
 ## Program Outline
 The program works with one calendar at a time, where the calendar consists of a set of events. Each event has a date, a
-start time, a title and an *optional* duration (in minutes). For simplicity, repeated events are not considered, and the
-output is purely textual - no day-by-day or week-by-week (etc) listings.
+start time, a title and an duration (in minutes). For simplicity, repeated events are not considered, and the output is
+purely textual - no day-by-day or week-by-week (etc) listings.
 
 The program does the following:
 - Read an optional command-line parameter. This represents a calendar file, and is loaded and displayed to the user. See
@@ -39,7 +37,6 @@ order. The format is described in [Calendar Display](#calendar-display).
 - Where appropriate, validate the contents of calendar files and events to ensure contains a valid date, time and
 duration, and that it conforms to the file format.
 
-------
 
 ## Calendar Files
 Calendar files can contain several events. The file does not state the number of events - this can only be known by
@@ -67,7 +64,6 @@ Uni
 Earth
 ```
 
-------
 
 ## Calendar Display
 The application must update the displayed events whenever a calendar is loaded or modified. It would be optimal if
@@ -103,7 +99,6 @@ the number).
 zero, omit them.
 - The event display ends with a new line and "---".
 
-------
 
 ## Graphical User Interface
 A wrapper around the GTK library was supplied as part of the original assignment. Note that this is not my work. This
@@ -114,7 +109,6 @@ method to attach callbacks to buttons to perform the required functionality (eg.
 
 For usage details see [gui.h](./gui.h).
 
-------
 
 ## Compiling
 This application requires the **GTK 3.0** package. It also makes use of `pkg-config` package.
