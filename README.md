@@ -1,4 +1,4 @@
-# Calendar Application
+# Calendar Application [![Build Status](https://travis-ci.org/jradtilbrook/calendar-app.svg?branch=master)](https://travis-ci.org/jradtilbrook/calendar-app)
 A simple calendar application GUI written in `C` using the **GTK+ 3** library. This was originally an assignment from a
 unit I took as part of my B.Eng. degree and this repository is effectively a re-mastering of that work to exhibit on
 GitHub. The original assignment specification is paraphrased in this README.
